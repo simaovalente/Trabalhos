@@ -1,0 +1,99 @@
+\documentclass[]{article} % A4 paper and 11pt font size
+\usepackage[final]{pdfpages}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amsfonts,amsthm} % Math packages
+\usepackage{outline}
+\usepackage{makeidx}
+\usepackage[gen]{eurosym}
+\usepackage{graphicx}
+\usepackage[portuguese]{babel} % Para termos legendas em português
+\usepackage{pmgraph}
+\usepackage[T1]{fontenc}
+\usepackage[normalem]{ulem}
+%\usepackage{undertilde}
+%\usepackage{amssymb}
+\usepackage{setspace}
+\usepackage{indentfirst}
+\usepackage{wrapfig}
+\usepackage{mathtools}
+\usepackage{amsmath} 
+\usepackage{lipsum}
+\usepackage{blindtext}
+\usepackage{chngcntr}
+\usepackage{tabu}
+\usepackage{float}
+\usepackage{easytable}
+\usepackage{physics}
+\usepackage{caption}
+\usepackage{listings}
+\usepackage{adjustbox}
+\usepackage{setspace}
+\usepackage{subfig}
+\renewcommand{\baselinestretch}{1.5}
+\counterwithin*{section}{part}
+%% \setcounter{section}{1} % Começa a numeracao das sections por 2
+\usepackage[resetlabels,labeled]{multibib}
+
+%--------------------Make usable space all of page
+\setlength{\parindent}{0.5cm}
+\setlength{\oddsidemargin}{0in}
+\setlength{\evensidemargin}{0in}
+\setlength{\topmargin}{0in}
+\setlength{\headsep}{-.25in}
+\setlength{\textwidth}{6.5in}
+\setlength{\textheight}{8.5in}
+%--------------------Indention
+\numberwithin{equation}{section} % Number equations within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+\numberwithin{figure}{section} % Number figures within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+\numberwithin{table}{section} % Number tables within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+%---------------------
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Create horizontal rule command with 1 argument of height
+\DeclareMathAccent{\wtilde}{\mathord}{largesymbols}{"65}
+
+\newtheorem{theorem}{Teorema}
+\newcommand{\euler}{e}
+\newcommand{\im}{j}
+
+\begin{document}
+\begin{titlepage}
+\begin{center}
+\begin{figure}
+\begin{flushleft}
+\includegraphics[height=2.5cm]{./IST_logo.png}\\[2cm]
+\end{flushleft}
+\end{figure}
+\title{Relatório Projeto STel}
+\huge \textsc{Sistemas de Telecomunicações}\\[0.2cm]
+\Large \textsc{2º Semestre 201/2019}\\[0.2cm]
+\normalsize \textsc{MEEC\\[1cm]}
+\horrule{1pt}\\[0cm]
+\huge \textbf{PROJECTO DE UMA LIGAÇÂO POR FEIXES HERTEZIANOS}  % The assignment title
+\horrule{1pt}\\[1cm]
+\end{center}
+\begin{center}
+\large
+Docentes : \\[1cm]
+\end{center}
+\begin{flushleft}
+\Large \textbf{Group:}\\[4pt]
+\large
+-- João Filipe, Nº 76481; \\
+-- Simão Valente, Nº 78089.\\[1.5cm]
+\end{flushleft}
+\centering
+\Large
+Lisboa, junho 2018
+\thispagestyle{empty}
+\end{titlepage}
+\tableofcontents
+
+\pagebreak
+\input{corpo}
+\pagebreak
+%\input{desenvolvimento}
+%\pagebreak
+%\input{conclusao}
+%\pagebreak
+%\bibliographystyle{ieeetr}
+%\bibliography{bibliography}
+\end{document}      
